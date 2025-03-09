@@ -36,7 +36,7 @@ const Home = () => {
   const updateRating = async (id, newRating) => {
     try {
       const token = localStorage.getItem('notejwt');
-      const response = await fetch(`http://localhost:8000/update-rating/${id}`, {
+      const response = await fetch(`https://noteapp-dmbk.onrender.com/update-rating/${id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,
