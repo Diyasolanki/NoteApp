@@ -24,7 +24,7 @@ const Login = () => {
         notifyError("Password must contain at least 8 characters, including at least 1 number and 1 includes both lower and uppercase letters and special characters for example #,?,!")
         return
       }
-      const response = await fetch('http://localhost:8000/login' , {
+      const response = await fetch('https://noteapp-dmbk.onrender.com/login' , {
         method: 'POST',
         headers : { 
           'Content-Type': 'application/json'

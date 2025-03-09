@@ -21,7 +21,7 @@ const MyNote = () => {
     const fetchNotes = async () => {
         try {
             const token = localStorage.getItem('notejwt');
-            const response = await fetch('http://localhost:8000/my-note', {
+            const response = await fetch('https://noteapp-dmbk.onrender.com/my-note', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -42,7 +42,7 @@ const MyNote = () => {
     const removenote = async (id) => {
         try {
             const token = localStorage.getItem('notejwt');
-            const response = await fetch(`http://localhost:8000/delete-note/${id}`, {
+            const response = await fetch(`https://noteapp-dmbk.onrender.com/delete-note/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -72,7 +72,7 @@ const MyNote = () => {
 
         try {
             const token = localStorage.getItem('notejwt');
-            const response = await fetch(`http://localhost:8000/updated-note/${edit._id}`, {
+            const response = await fetch(`https://noteapp-dmbk.onrender.com/updated-note/${edit._id}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -98,7 +98,7 @@ const MyNote = () => {
     const togglePin = async (id) => {
         try {
             const token = localStorage.getItem("notejwt");
-            const response = await fetch(`http://localhost:8000/pin-note/${id}`, {
+            const response = await fetch(`https://noteapp-dmbk.onrender.com/pin-note/${id}`, {
                 method: "PUT",
                 headers: {
                     Authorization: `Bearer ${token}`,

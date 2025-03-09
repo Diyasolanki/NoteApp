@@ -15,7 +15,7 @@ const TrashNotes = () => {
     const fetchTrashNotes = async () => {
         try {
             const token = localStorage.getItem('notejwt');
-            const response = await fetch('http://localhost:8000/my-note', {
+            const response = await fetch('https://noteapp-dmbk.onrender.com/my-note', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -33,7 +33,7 @@ const TrashNotes = () => {
     const restoreNote = async (id) => {
         try {
             const token = localStorage.getItem('notejwt');
-            const response = await fetch(`http://localhost:8000/restore-note/${id}`, {
+            const response = await fetch(`https://noteapp-dmbk.onrender.com/restore-note/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,

@@ -14,7 +14,7 @@ const CreateNote = () => {
   const addNote = async () => {
     const token = localStorage.getItem('notejwt');
 
-    const response = await fetch('http://localhost:8000/add-note', {
+    const response = await fetch('https://noteapp-dmbk.onrender.com/add-note', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

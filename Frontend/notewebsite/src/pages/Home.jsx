@@ -16,7 +16,7 @@ const Home = () => {
     try {
       const token = localStorage.getItem('notejwt');
 
-      const response = await fetch('http://localhost:8000/get-notes', {
+      const response = await fetch('https://noteapp-dmbk.onrender.com/get-notes', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
