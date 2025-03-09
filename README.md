@@ -1,7 +1,7 @@
 <html>
 <body>
-<h1>NoteApp :  A Simple & Intuitive Note-Taking Website</h1>
-<h5>NoteApp is a full-stack MERN application that allows users to create, manage, and organize their notes efficiently. With features like authentication, theming, search, filtering, and pinning, it provides a seamless note-taking experience.</h5>
+<h2>NoteApp :  A Simple & Intuitive Note-Taking Website</h2>
+<h3>NoteApp is a full-stack MERN application that allows users to create, manage, and organize their notes efficiently. With features like authentication, theming, search, filtering, and pinning, it provides a seamless note-taking experience.</h3>
 
 
 
@@ -21,6 +21,9 @@
 <li>Backend: Node.js, Express.js, MongoDB</li>
 <li>Authentication: JWT, bcrypt</li>
 <li>State Management: Context API</li>
+
+<h3>NoteDown</h3>
+    <p>Use dotenv file to store your all secret keys and port. and use mongodb atlas to store your database data</p>
 
 </body>
  </html>
